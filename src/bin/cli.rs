@@ -18,7 +18,7 @@ fn tool() -> Result<(), String> {
     }
 
     //TODO: allow override with parameter
-    let efi_dir = "/boot/EFI";
+    let efi_dir = "/boot";
 
     let usage = "subcommands:\n  schedule\n  unschedule\n  thelio-io";
     match env::args().nth(1) {
