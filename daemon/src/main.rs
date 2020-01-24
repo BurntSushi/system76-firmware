@@ -27,7 +27,7 @@ fn daemon() -> Result<(), String> {
     }
 
     //TODO: allow override with parameter
-    let efi_dir = "/boot/efi";
+    let efi_dir = "/boot/EFI";
 
     let in_whitelist = bios().ok().map_or(false, |(model, _)| model_is_whitelisted(&*model));
 
